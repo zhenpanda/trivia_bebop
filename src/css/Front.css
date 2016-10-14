@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+}
+.App {
+  background-color: firebrick;
+  padding-bottom: 140px;
+}
+
+#top-space {
+  margin-top: 70px;
+  -webkit-box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
+  -moz-box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
+  box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
+  width: 100%;
+}
+
+#start-area {
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+#start-btn {
+  margin-top: -420px;
+  margin-left: 30px;
+}
