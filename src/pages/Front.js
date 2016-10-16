@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+
 import '../css/Front.css';
 import landing from '../images/landingImg.png'
 
@@ -11,7 +12,8 @@ export default class Front extends React.Component {
           <img id="top-space" src={landing} alt={"logo"}/>
         </div>
         <div id="start-area">
-          <a className="waves-effect waves-light btn" id="start-btn">Start Game</a>
+          {this.props.children}
+          <Link to="game" className="waves-effect waves-light btn" id="start-btn">Start Game</Link>
         </div>
       </div>
     );

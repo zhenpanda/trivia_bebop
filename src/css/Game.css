@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Hipsterish";
+  src: url('HipsterishFontNormal.ttf');
+}
+
+.questions-top{
+    margin-top: 15px;
+}
+
+.choice {
+  margin: 0px 6px 0 6px;
+}
+.img-shadow {
+  margin-top: 80px;
+  -webkit-box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
+  -moz-box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
+  box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
+  width: 60%;
+}
+
+.beatle-style {
+  text-align: center;
+  background-color: white;
+}
+.beatle-question {
+  color: black;
+  font-size: 26px;
+  font-family: "Hipsterish";
+}
