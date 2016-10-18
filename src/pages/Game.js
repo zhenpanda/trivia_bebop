@@ -2,22 +2,40 @@ import React from "react";
 
 import MusicStore from "../stores/MusicStore";
 import Question from "../components/Question";
-// import * as TodoActions from "../actions/TodoActions";
 
 export default class Featured extends React.Component {
   // init when Feature is run
   constructor() {
     super();
-    // loading in the data
-    this.state = {info: MusicStore.getAll()}
-    console.log(this.state)
+    // pointing getData to this obj
+    this.getData = this.getData.bind(this);
+    // grabbing the data from store
+    this.state = {
+      info: MusicStore.getAll(),
+      stage: MusicStore.getStage()
+    };
+    // count the turns which player is currently at
+    console.log(this.state, "this is starting state");
+  }
+  // loading in things the first time the componet is being loaded
+  componentWillMount() {
+    MusicStore.on("change", this.getData)
+  }
+  // grab all the data from store
+  getData() {
+    this.setState({
+      stage: MusicStore.getStage()
+    })
+    console.log("new state is", this.state);
   }
 
-  // render html
+  // render automaticlly when state is changed
   render() {
-    const { info } = this.state;
-    // custom object to be render by DOM
-    const QuestionComponent = info.map((music) => {
+    let parts = [];
+    let cStage= this.state.stage;
+    console.log("Stage is now at", cStage+1);
+    parts.push(this.state.info[cStage]);
+    const QuestionComponent = parts.map((music) => {
         return <Question key={music.id} {...music}/>;
     });
 
@@ -26,5 +44,7 @@ export default class Featured extends React.Component {
         <div>{QuestionComponent}</div>
       </div>
     );
+
   }
+
 }
