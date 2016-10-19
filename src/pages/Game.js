@@ -26,6 +26,8 @@ export default class Featured extends React.Component {
     this.setState({
       stage: MusicStore.getStage()
     })
+    let c = MusicStore.getChoice();
+    console.log("player choice is", c);
     console.log("new state is", this.state);
   }
 

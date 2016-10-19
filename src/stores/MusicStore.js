@@ -16,16 +16,47 @@ class MusicStore extends EventEmitter {
       },
       {
         id: 2,
-        artist:"Questions2",
-        answers:["Abbey Road", "Walk about","The White Album","Come Together"],
-        question:"This is questions 2?"
+        artist:"Bowie",
+        answers:["Elvis Presley", "Ozzy Osbourne","David Bowie","Tom Jones"],
+        question:"What is the name of this English-born pop artist?"
+      },
+      {
+        id: 3,
+        artist:"Madonna",
+        answers:["Cher", "Pink","Britney Spears","Madonna"],
+        question:"Who is this artist often refered to as Queen of Pop?"
+      },
+      {
+        id: 4,
+        artist:"Michael",
+        answers:["Thriller", "Zombie", "Monsters", "Forever"],
+        question:"What is the name of Michael Jackson's best selling 1982 album?"
+      },
+      {
+        id: 5,
+        artist:"Nirvana",
+        answers:["Foo Fighters", "Nirvana","Red Hot Chili Peppers","The Smiths"],
+        question:"Which band does this album cover belong to?"
+      },
+      {
+        id: 6,
+        artist:"End Game",
+        answers:[""],
+        question:"Thank you for Playing"
       }
     ];
+    this.answers = [0,2,3,0,1];
     this.playerChoice = [];
   }
 
   getStage() {
     return this.stage;
+  }
+  getChoice() {
+    return this.playerChoice;
+  }
+  getAnswer() {
+    return this.answers;
   }
   getAll() {
     return this.musicInfo;

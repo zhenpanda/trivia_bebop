@@ -18,12 +18,30 @@
   width: 60%;
 }
 
-.beatle-style {
+.shared-bg {
   text-align: center;
+  padding-bottom: 200px;
+}
+
+.beatle-style {
   background-color: white;
 }
 .beatle-question {
   color: black;
   font-size: 26px;
   font-family: "Hipsterish";
+}
+.beatle-color {
+}
+.bowie-style {
+  background-color: #ffffcc;
+}
+.madonna-style {
+  background-color: #ffcccc;
+}
+.michael-style {
+  background-color: #99cc66;
+}
+.nirvana-style {
+  background-color: #ff9966;
 }
