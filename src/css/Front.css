@@ -8,7 +8,7 @@
   -webkit-box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
   -moz-box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
   box-shadow: -8px 13px 36px 3px rgba(0,0,0,0.43);
-  width: 100%;
+  width: 90%;
 }
 
 #start-area {
@@ -20,5 +20,5 @@
 
 #start-btn {
   margin-top: -350px;
-  margin-left: 30px;
+  margin-left: -40px;
 }
